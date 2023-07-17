@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraMouseController : MonoBehaviour {
+	public float panSpeed, rotateSpeed;
 	public float acceleration = 50; // how fast you accelerate
 	public float accSprintMultiplier = 4; // how much faster you go when "sprinting"
 	public float lookSensitivity = 1; // mouse look sensitivity
@@ -19,10 +20,32 @@ public class CameraMouseController : MonoBehaviour {
 
 	void OnDisable() => Focused = false;
 
+	Vector3 panMovement = Vector3.zero;
+	Vector3 prevMousePosition = Vector3.zero;
+
 	void Update() {
-		// Input
+		
+        Vector3 mouseIn = new Vector3(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"), 0f);
+        if (!Focused && Input.GetKey(KeyCode.Mouse2))
+		{
+            panMovement = mouseIn * panSpeed * Time.deltaTime;
+			transform.position -= transform.up * panMovement.y;
+            transform.position -= transform.right * panMovement.x;
+        }
+        if (!Focused && Input.GetKey(KeyCode.Mouse0))
+        {
+			Vector3 mouseDelta = Input.mousePosition - prevMousePosition;
+            transform.RotateAround(Vector3.zero, Vector3.up, mouseDelta.x * rotateSpeed * Time.deltaTime);
+            transform.RotateAround(Vector3.zero, transform.right, -mouseDelta.y * rotateSpeed * Time.deltaTime);
+        }
+		prevMousePosition = Input.mousePosition;
+
+
+
+
+        // Input
         Focused = Input.GetKey(KeyCode.Mouse1);
-        //Cursor.visible = !Focused;
+        Cursor.visible = !Focused;
         
 		if( Focused )
 			UpdateInput();
@@ -66,7 +89,7 @@ public class CameraMouseController : MonoBehaviour {
 		Vector3 direction = transform.TransformVector( moveInput.normalized );
 
 		if( Input.GetKey( KeyCode.LeftShift ) )
-			return direction * ( acceleration * accSprintMultiplier ); // "sprinting"
-		return direction * acceleration; // "walking"
+			return direction * ( acceleration * accSprintMultiplier ) + panMovement; // "sprinting"
+		return direction * acceleration + panMovement; // "walking"
 	}
 }

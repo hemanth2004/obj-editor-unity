@@ -2,14 +2,14 @@ using UnityEngine;
 using UnityEditor;
 using System.Collections.Generic;
 using System;
-using static UnityEditor.PlayerSettings;
 
 public class ObjEditor : MonoBehaviour
 {
 
 
     
-    [SerializeField] private Text_Editor textEditor;
+    public Text_Editor textEditor;
+
     [SerializeField] private VertexTooltip vertexTooltip;
     [SerializeField] private MeshFilter modelMeshFilter;
     [SerializeField] private GameObject highlightersPrafab;
@@ -22,7 +22,7 @@ public class ObjEditor : MonoBehaviour
     private List<GameObject> vs = new List<GameObject>();
 
     private string prevText;
-
+    [HideInInspector] public Mesh mesh;
     private void Start()
     {
         _pooler = GetComponent<VertexPooler>();
@@ -35,9 +35,9 @@ public class ObjEditor : MonoBehaviour
         linePositionDisplay.text = "Ln:" + textEditor.current_row + " Ch:" + textEditor.current_chr;
         if(prevText != textEditor.text)
         {
-            Mesh m = LoadMeshFromObjText(textEditor.text);
-            modelMeshFilter.mesh = m;
-            modelMeshFilter.transform.GetChild(0).gameObject.GetComponent<MeshFilter>().mesh = m;
+            mesh = LoadMeshFromObjText(textEditor.text);
+            modelMeshFilter.mesh = mesh;
+            modelMeshFilter.transform.GetChild(0).gameObject.GetComponent<MeshFilter>().mesh = mesh;
         }
         prevText = textEditor.text;
     }
@@ -160,6 +160,7 @@ public class ObjEditor : MonoBehaviour
     {
         textEditor.text = primitiveDatas[ind].primitiveText;
     }
+
 }
 
 
