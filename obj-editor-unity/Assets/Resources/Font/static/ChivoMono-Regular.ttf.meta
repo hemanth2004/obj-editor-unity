@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: 38e6e0dae0a00b344b1d0e29a919c35b
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Chivo Mono
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 183568c999664504eaac64538f63088e, type: 3}
+  - {fileID: 12800000, guid: a05ad837744553844a5146841f66a1d1, type: 3}
+  - {fileID: 12800000, guid: 349861ae1acf0714f80fe9576d97ab82, type: 3}
+  - {fileID: 12800000, guid: 90709e4efff02184483c3398710d7f56, type: 3}
+  - {fileID: 12800000, guid: 60ad15e79b9eeeb4ca9b3969f4c95316, type: 3}
+  - {fileID: 12800000, guid: c5c876ffe96597c45aad46700d3a79c2, type: 3}
+  - {fileID: 12800000, guid: 8606df5221f43c54f9f0902f4b3fbf89, type: 3}
+  - {fileID: 12800000, guid: a4d2e417b7abcbe4d9333528e48032ff, type: 3}
+  - {fileID: 12800000, guid: 475c104c4f2b37347ada094b7ac68a90, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
