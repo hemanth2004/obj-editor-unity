@@ -154,8 +154,8 @@
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Editor\Utilities\Scopes\GUIGroupScope.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Editor\inspectors\FrameRateDrawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Editor\Utilities\AnimatedParameterUtility.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Editor\Window\TimelineWindow_Manipulators.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Editor\treeview\PickerUtils.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Editor\Window\TimelineWindow_Manipulators.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Editor\inspectors\ClipInspector\ClipInspectorCurveEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Editor\Window\ViewModel\TimelineAssetViewModel.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.4\Editor\Recording\TrackAssetRecordingExtensions.cs" />

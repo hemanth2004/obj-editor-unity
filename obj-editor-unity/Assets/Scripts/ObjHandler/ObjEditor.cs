@@ -2,18 +2,34 @@ using UnityEngine;
 using UnityEditor;
 using System.Collections.Generic;
 using System;
+using static UnityEditor.PlayerSettings;
 
 public class ObjEditor : MonoBehaviour
 {
+
+
+    
     [SerializeField] private Text_Editor textEditor;
     [SerializeField] private VertexTooltip vertexTooltip;
     [SerializeField] private MeshFilter modelMeshFilter;
-    [SerializeField] private Transform highlightersParent, mainCamera;
-    [SerializeField] private GameObject highlighterPrefab;
+    [SerializeField] private GameObject highlightersPrafab;
+    [SerializeField] private Transform mainCamera, highlightersParent;
     [SerializeField] private UnityEngine.UI.Text linePositionDisplay;
     [SerializeField] private PrimitiveData[] primitiveDatas;
 
+    private VertexPooler _pooler;
+
+    private List<GameObject> vs = new List<GameObject>();
+
     private string prevText;
+
+    private void Start()
+    {
+        _pooler = GetComponent<VertexPooler>();
+        _pooler.mainCamera = mainCamera;
+    }
+
+
     private void LateUpdate()
     {
         linePositionDisplay.text = "Ln:" + textEditor.current_row + " Ch:" + textEditor.current_chr;
@@ -129,15 +145,14 @@ public class ObjEditor : MonoBehaviour
     {
         vertexTooltip.UpdateVertices(vertexPositions);
 
-        foreach(Transform t in highlightersParent)
+        foreach(Transform child in highlightersParent)
         {
-	        GameObject.Destroy(t.gameObject);
+            Destroy(child.gameObject);
         }
 
         foreach(Vector3 pos in vertexPositions)
         {
-            Instantiate(highlighterPrefab, pos, Quaternion.identity, highlightersParent).GetComponent<VertexHighlighter>().setValue(mainCamera);
-
+            Instantiate(highlightersPrafab, pos, Quaternion.identity, highlightersParent).GetComponent<VertexHighlighter>().setValue(mainCamera);
         }
     }
 

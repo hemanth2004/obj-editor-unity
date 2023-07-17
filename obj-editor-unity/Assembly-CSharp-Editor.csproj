@@ -831,9 +831,9 @@
       <Project>{15E837E0-E2CD-AE0F-1554-63584E94562D}</Project>
       <Name>Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Postprocessing.Editor.csproj">
-      <Project>{4BCE862D-3324-2825-2B23-549C5AF93B10}</Project>
-      <Name>Unity.Postprocessing.Editor</Name>
+    <ProjectReference Include="Unity.VisualScripting.Flow.csproj">
+      <Project>{5FD49699-5EC8-C23C-A872-BEE62541A6C6}</Project>
+      <Name>Unity.VisualScripting.Flow</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{6B5C0FD5-A7FF-4D8B-9D52-4EDF7A89D0F9}</Project>
@@ -846,10 +846,6 @@
     <ProjectReference Include="Unity.Rider.Editor.csproj">
       <Project>{8B6AC00C-2A72-A87B-F79E-7FC71443A718}</Project>
       <Name>Unity.Rider.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.Flow.csproj">
-      <Project>{5FD49699-5EC8-C23C-A872-BEE62541A6C6}</Project>
-      <Name>Unity.VisualScripting.Flow</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{DF7BE1B8-FEC2-1C54-5F9D-EABB67D222CC}</Project>
@@ -874,10 +870,6 @@
     <ProjectReference Include="com.unity.cinemachine.editor.csproj">
       <Project>{C0F36EFC-5E91-A844-2F0F-A2CC50186491}</Project>
       <Name>com.unity.cinemachine.editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Postprocessing.Runtime.csproj">
-      <Project>{CD8AF1D5-63A3-C08E-C6D5-1F85A168CE06}</Project>
-      <Name>Unity.Postprocessing.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Shared.Editor.csproj">
       <Project>{4F72D0AB-5313-089A-52E2-E247175D8739}</Project>

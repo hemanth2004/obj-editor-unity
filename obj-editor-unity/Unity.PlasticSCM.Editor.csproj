@@ -71,8 +71,8 @@
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\History\HistorySelection.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Gluon\UpdateReport\UpdateReportListHeaderState.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\PlasticDialog.cs" />
-    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\Tree\TreeHeaderColumns.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Inspector\DrawInspectorOperations.cs" />
+    <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\Tree\TreeHeaderColumns.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\UI\MeasureMaxWidth.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\WebApi\ChangesetFromCollabCommitResponse.cs" />
     <Compile Include="Library\PackageCache\com.unity.collab-proxy@2.0.1\Editor\PlasticSCM\Views\IncomingChanges\Gluon\Errors\ErrorListViewItem.cs" />
