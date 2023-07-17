@@ -16,7 +16,7 @@ we define three vertices in one face line as this doesn't directly support trian
 
 for more details: https://cs.wellesley.edu/~cs307/readings/obj-ojects.html
 
-# Open Source Licences
+# open source licences
 
 https://github.com/ogxd/normals-effect-unity
 
