@@ -25,5 +25,6 @@ movement:
 # open source licences
 
 https://github.com/ogxd/normals-effect-unity
-
 https://github.com/xttx/Unity-Runtime-ScriptEditor/tree/master/Script-Editor
+https://github.com/yasirkula/UnityRuntimePreviewGenerator
+https://pastebin.com/tVdF8bNG
