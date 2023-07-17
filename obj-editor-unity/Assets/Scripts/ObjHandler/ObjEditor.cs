@@ -5,9 +5,6 @@ using System;
 
 public class ObjEditor : MonoBehaviour
 {
-
-
-    
     public Text_Editor textEditor;
 
     [SerializeField] private VertexTooltip vertexTooltip;
@@ -86,14 +83,13 @@ public class ObjEditor : MonoBehaviour
                     int vertexIndex = int.Parse(indices[0]) - 1;
                     triangles.Add(vertexIndex);
 
-                    // Check if texture coordinate index is provided
                     if (indices.Length >= 2 && !string.IsNullOrEmpty(indices[1]))
                     {
                         int uvIndex = int.Parse(indices[1]) - 1;
                         uvIndices.Add(uvIndex);
                     }
 
-                    // Check if normal index is provided
+
                     if (indices.Length >= 3 && !string.IsNullOrEmpty(indices[2]))
                     {
                         int normalIndex = int.Parse(indices[2]) - 1;
@@ -103,13 +99,13 @@ public class ObjEditor : MonoBehaviour
             }
         }
 
-        LoadVertices(vertices.ToArray()); // Assuming you have a custom LoadVertices method
+        LoadVertices(vertices.ToArray());
 
         Mesh mesh = new Mesh();
         mesh.vertices = vertices.ToArray();
         mesh.triangles = triangles.ToArray();
 
-        // Assign normals if available
+
         if (normals.Count > 0 && normalIndices.Count > 0)
         {
             List<Vector3> meshNormals = new List<Vector3>();
@@ -124,7 +120,7 @@ public class ObjEditor : MonoBehaviour
             mesh.RecalculateNormals();
         }
 
-        // Assign UV coordinates if available
+
         if (uvs.Count > 0 && uvIndices.Count > 0)
         {
             List<Vector2> meshUVs = new List<Vector2>();
