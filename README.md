@@ -3,7 +3,7 @@ a text based 3D model editor following basic syntax of the .obj format
 
 simple-obj-editor provides an interface to edit your 3d model / unity mesh / .obj file text data and see the changes live.
 
-**This is mostly an educational project and doesn't really server a user need**
+**This is mostly an educational project and doesn't really serve a user need**
 
 # build link: https://hmnt.itch.io/obj-editor
 
