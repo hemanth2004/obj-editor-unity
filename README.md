@@ -1,7 +1,7 @@
 # obj-editor-unity
 a text based 3D model editor following basic syntax of the .obj format
-The .obj file format is essentially a text file. 
-simple-obj-editor provides an interface to edit your .obj file and see the changes live.
+**This is mostly an educational project and doesn't really server a user need**
+simple-obj-editor provides an interface to edit your 3d model / unity mesh / .obj file text data and see the changes live.
 
 # build link: https://hmnt.itch.io/obj-editor
 
