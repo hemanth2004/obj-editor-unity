@@ -1,3 +1,6 @@
+<img src="https://github.com/user-attachments/assets/16ad69d2-d5f9-4e19-b108-2bbc44d6dec8" width="300px">
+
+
 # obj-editor-unity
 a text based 3D model editor following basic syntax of the .obj format
 
