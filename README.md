@@ -6,7 +6,10 @@ a text based 3D model editor following basic syntax of the .obj format
 
 simple-obj-editor provides an interface to edit your 3d model / unity mesh / .obj file text data and see the changes live.
 
-# build link: https://hmnt.itch.io/obj-editor
+> [final build: https://hmnt.itch.io/obj-editor](https://hmnt.itch.io/obj-editor)
+
+> [.obj primitives](https://gist.github.com/hemanth2004/8a22aa78e847fdfbb8ce36c7bb3031c0)
+
 
 # a brief how-to:
 1. lines starting with v and followed by three numbers seperated by whitespace are vertices
@@ -30,7 +33,6 @@ movement:
 2. hold middle mouse button and move to pan 
 
 3. hold right mouse button and press W,A,S,D,Q,E for movement
-
 
 
 # open source licences
