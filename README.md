@@ -1,12 +1,11 @@
 <img src="https://github.com/user-attachments/assets/16ad69d2-d5f9-4e19-b108-2bbc44d6dec8" width="300px">
 
-
 # obj-editor-unity
 a text based 3D model editor following basic syntax of the .obj format
 
-simple-obj-editor provides an interface to edit your 3d model / unity mesh / .obj file text data and see the changes live.
+obj-editor-unity provides an interface to edit your 3d model / unity mesh / .obj file text data and see the changes live.
 
-> [final build: https://hmnt.itch.io/obj-editor](https://hmnt.itch.io/obj-editor)
+> [windows & linux build: https://hmnt.itch.io/obj-editor](https://hmnt.itch.io/obj-editor)
 
 > [.obj primitives](https://gist.github.com/hemanth2004/8a22aa78e847fdfbb8ce36c7bb3031c0)
 
